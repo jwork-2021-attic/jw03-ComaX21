@@ -16,7 +16,7 @@ public class QuickSorter implements Sorter{
         temp = a[i];
         a[i] = a[j];
         a[j] = temp;
-        plan += "" + i + "<->" + j + "\n";
+        plan += "" + a[i] + "<->" + a[j] + "\n";
     }
 
     

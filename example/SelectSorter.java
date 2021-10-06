@@ -16,7 +16,7 @@ public class SelectSorter implements Sorter{
         temp = a[i];
         a[i] = a[j];
         a[j] = temp;
-        plan += "" + i + "<->" + j + "\n";
+        plan += "" + a[i] + "<->" + a[j] + "\n";
     }
 
     
@@ -33,8 +33,8 @@ public class SelectSorter implements Sorter{
                 if(a[j] < a[min_index]){
                     min_index = j;
                 }
-                swap(i, min_index);
             }
+            swap(i, min_index);
         }
     }
 
