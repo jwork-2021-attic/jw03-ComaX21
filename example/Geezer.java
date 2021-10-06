@@ -40,7 +40,7 @@ public class Geezer {
         sorter.sort();
 
         String[] sortSteps = this.parsePlan(sorter.getPlan());
-
+        System.out.println(line.toString());
         for (String step : sortSteps) {
             this.execute(step);
             System.out.println(line.toString());
