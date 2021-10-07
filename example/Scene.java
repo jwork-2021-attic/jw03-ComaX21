@@ -44,6 +44,7 @@ public class Scene {
 
         Class c = loader.loadClass("example.QuickSorter");
 
+        
         Sorter sorter = (Sorter) c.newInstance();
 
         theGeezer.setSorter(sorter);
