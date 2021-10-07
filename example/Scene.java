@@ -33,12 +33,16 @@ public class Scene {
         Class c = loader.loadClass("example.QuickSorter");
         */
 
-        
+        /*
         SteganographyClassLoader loader = new SteganographyClassLoader(new URL("file:///C:/Users/x1985/Desktop/jw03-ComaX21/example.SelectSorter.png"));
 
         Class c = loader.loadClass("example.SelectSorter");
-        
+        */
 
+        //191220160 张峻的图
+        SteganographyClassLoader loader = new SteganographyClassLoader(new URL("file:///C:/Users/x1985/Desktop/jw03-ComaX21/otherpicture/example.QuickSorter.png"));
+
+        Class c = loader.loadClass("example.QuickSorter");
 
         Sorter sorter = (Sorter) c.newInstance();
 
